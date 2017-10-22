@@ -1,0 +1,13 @@
+.panel.panel-default
+  .panel-heading Product information
+  .panel-body
+    .col-md-6
+      .row
+        .col-md-3.text-right Name
+        .col-md-9 = @product.name
+    .col-md-6
+      .row
+        .col-md-3.text-right Price
+        .col-md-9 = @product.show_price
+
+= reviews_datatable(@product)

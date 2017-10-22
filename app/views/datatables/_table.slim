@@ -1,0 +1,10 @@
+.panel.panel-default
+  .panel-heading
+    = title
+  .panel-body
+    table.table.table-bordered.custom-datatable cellspacing="0" class="#{table_classes}" data={ show: show_path, ajax: data_path, show_on_click: show_on_click.to_s, click_link: show_on_click && data_path} style="width: 100%;"
+      thead
+        tr role='row'
+          - headers.each.with_index do |header, i|
+            th data=rules[header.to_sym] = header
+      tbody

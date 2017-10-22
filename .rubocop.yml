@@ -1,0 +1,98 @@
+require: rubocop-rspec
+
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 2.4.2
+  Exclude:
+    - 'tmp/**/*.rb'
+
+LineLength:
+  Max: 100
+
+Lint/Void:
+  Enabled: false
+
+# STYLES
+#--------------------------------------------------------------------------
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Style/SpaceAroundOperators:
+  Enabled: false
+
+Style/PredicateName:
+  Enabled: false
+
+Style/RegexpLiteral:
+  Enabled: false
+
+Style/LambdaCall:
+  Enabled: false
+
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/MultilineMethodCallBraceLayout:
+  EnforcedStyle: new_line
+
+Style/ModuleFunction:
+  Enabled: false
+
+Style/OpMethod:
+  Enabled: false
+
+Style/EachWithObject:
+  Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false
+
+Style/SymbolArray:
+  MinSize: 3
+
+Style/VariableNumber:
+  EnforcedStyle: snake_case
+  SupportedStyles:
+    - snake_case
+    - normalcase
+    - non_integer
+
+Style/NegatedIf:
+  Enabled: false
+
+# Test related configurations
+#--------------------------------------------------------------------------
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*_spec.rb'
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/NestedGroups:
+  MaxNesting: 4
+
+Style/BlockDelimiters:
+  Exclude:
+    - 'spec/**/*.rb'
+
+RSpec/MessageSpies:
+  Enabled: false
+
+RSpec/ScatteredLet:
+  Enabled: false

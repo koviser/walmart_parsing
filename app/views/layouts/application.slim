@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Walmark Parsing
+    = csrf_meta_tags
+    meta content="width=device-width, initial-scale=1" name="viewport"
+    = stylesheet_link_tag 'application', media: 'all'
+
+  body
+    .container
+      nav.navbar.navbar-light.bg-faded
+        = link_to "Walmart parser", root_path, class: 'btn btn-default'
+      = yield
+    = javascript_include_tag 'application'

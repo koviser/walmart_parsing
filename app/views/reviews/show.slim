@@ -1,0 +1,20 @@
+.panel.panel-default
+  .panel-heading Review information
+  .panel-body
+    .col-md-6
+      .row
+        .col-md-3.text-right rating
+        .col-md-9 = @review.rating
+      .row
+        .col-md-3.text-right title
+        .col-md-9 = @review.title
+      .row
+        .col-md-3.text-right Submission time
+        .col-md-9 = @review.submission_time
+      .row
+        .col-md-3.text-right User nickname
+        .col-md-9 = @review.user_nickname
+    .col-md-6
+      .row
+        .col-md-3.text-right text
+        .col-md-9 = @review.text

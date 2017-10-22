@@ -1,0 +1,13 @@
+:verbose: false
+:timeout: 30
+
+:queues:
+  - default
+  - less_priority
+
+development:
+  :concurrency: 5
+  :logfile: ./log/sidekiq_development.log
+production:
+  :concurrency: 10
+  :logfile: ./log/sidekiq_production.log

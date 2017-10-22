@@ -1,0 +1,13 @@
+/node_modules
+/public/assets
+/public/uploads
+log/*
+tmp/*
+
+app/assets/javascripts/app.js
+app/assets/stylesheets/app.scss
+config/database.yml
+
+server-configs
+.bundle
+.byebug_history
